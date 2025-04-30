@@ -1,5 +1,5 @@
-from .models import State
+from .models import Product
 
 __all__ = [
-    "State",
+    "Product",
 ]

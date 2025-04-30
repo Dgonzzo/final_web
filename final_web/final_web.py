@@ -4,14 +4,28 @@ from rxconfig import config
 # Imports from components
 from .components import sidebar_bottom_profile
 
+# Imports from controllers
+from .controllers import ListState
+
 # Imports from pages
 from .pages import main_page
+from .pages import show_list
 
 def index() -> rx.Component:
     # Welcome Page (Index)
     return rx.hstack(
         sidebar_bottom_profile(),
         main_page()
+    )
+
+def show_products() -> rx.Component:
+    return rx.hstack(
+        sidebar_bottom_profile(),
+        rx.vstack(
+            show_list(),
+            justify="center",
+            min_height="85vh",
+        )
     )
 
 app = rx.App(
@@ -24,3 +38,4 @@ app = rx.App(
     ),
 )
 app.add_page(index)
+app.add_page(show_products, route='show_products')

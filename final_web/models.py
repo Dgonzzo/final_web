@@ -1,6 +1,6 @@
 import reflex as rx
 
-class State(rx.State):
-    """The app state."""
-
-    ...
+class Product(rx.Model, table=True):
+    identificator: int
+    name: str
+    price: float
