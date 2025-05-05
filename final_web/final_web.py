@@ -10,6 +10,7 @@ from .controllers import ListState
 # Imports from pages
 from .pages import main_page
 from .pages import show_list
+from .pages import add_product_page
 
 def index() -> rx.Component:
     # Welcome Page (Index)
@@ -28,6 +29,16 @@ def show_products() -> rx.Component:
         )
     )
 
+def add_product() -> rx.Component:
+    return rx.hstack(
+        sidebar_bottom_profile(),
+        rx.vstack(
+            add_product_page(),
+            justify="center",
+            min_height="85vh",
+        )
+    )
+
 app = rx.App(
     theme = rx.theme(
         appearance = "inherit",
@@ -39,3 +50,4 @@ app = rx.App(
 )
 app.add_page(index)
 app.add_page(show_products, route='show_products')
+app.add_page(add_product, route='add_product')
