@@ -18,5 +18,5 @@ class AddState(rx.State):
             )
             session.commit()
 
-        return rx.redirect('/show_product') 
+        return rx.redirect('/show_products') 
 

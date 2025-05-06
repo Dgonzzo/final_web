@@ -49,5 +49,5 @@ app = rx.App(
     ),
 )
 app.add_page(index)
-app.add_page(show_products, route='show_products')
+app.add_page(show_products, route='show_products', on_load = ListState.get_products)
 app.add_page(add_product, route='add_product')
