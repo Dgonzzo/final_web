@@ -15,5 +15,5 @@ class DeleteState(rx.State):
             session.delete(product)
             session.commit()
 
-            return rx.redirect('/show_products')
+        return rx.redirect('/show_products')
         
