@@ -32,7 +32,7 @@ def form_add_product():
         justify="center",
     )
 
-def add_product_page() -> rx.Component:
+def update_product_page() -> rx.Component:
     return rx.container(
         rx.vstack(
             rx.text("Update a product", size="9"),
