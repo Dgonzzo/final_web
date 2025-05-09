@@ -12,6 +12,7 @@ from .pages import main_page
 from .pages import show_list
 from .pages import add_product_page
 from .pages import update_product_page
+from .pages import delete_product_page
 
 def index() -> rx.Component:
     # Welcome Page (Index)
@@ -45,6 +46,7 @@ def update_delete_product() -> rx.Component:
         sidebar_bottom_profile(),
         rx.vstack(
             update_product_page(),
+            delete_product_page(),
             justify="center",
             min_height="85vh",
         )
@@ -64,4 +66,3 @@ app.add_page(index)
 app.add_page(show_products, route='show_products', on_load = ListState.get_products)
 app.add_page(add_product, route='add_product')
 app.add_page(update_delete_product, route='update_delete_product')
-
