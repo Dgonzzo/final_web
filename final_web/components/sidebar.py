@@ -59,17 +59,17 @@ def sidebar_bottom_profile() -> rx.Component:
                 sidebar_items(),
                 rx.spacer(),
                 rx.vstack(
-                    rx.vstack(
-                        sidebar_item(
-                            "Settings", "settings", "/#"
-                        ),
-                        sidebar_item(
-                            "Log out", "log-out", "/#"
-                        ),
-                        spacing="1",
-                        width="100%",
-                    ),
-                    rx.divider(),
+                    # rx.vstack(
+                    #     sidebar_item(
+                    #         "Settings", "settings", "/#"
+                    #     ),
+                    #     sidebar_item(
+                    #         "Log out", "log-out", "/#"
+                    #     ),
+                    #     spacing="1",
+                    #     width="100%",
+                    # ),
+                    # rx.divider(),
                     rx.hstack(
                         rx.icon_button(
                             rx.icon("user"),
@@ -79,12 +79,12 @@ def sidebar_bottom_profile() -> rx.Component:
                         rx.vstack(
                             rx.box(
                                 rx.text(
-                                    "My account",
+                                    "Guest account",
                                     size="3",
                                     weight="bold",
                                 ),
                                 rx.text(
-                                    "user@reflex.dev",
+                                    "user@my_library.dev",
                                     size="2",
                                     weight="medium",
                                 ),
@@ -133,54 +133,54 @@ def sidebar_bottom_profile() -> rx.Component:
                             ),
                             sidebar_items(),
                             rx.spacer(),
-                            rx.vstack(
-                                rx.vstack(
-                                    sidebar_item(
-                                        "Settings",
-                                        "settings",
-                                        "/#",
-                                    ),
-                                    sidebar_item(
-                                        "Log out",
-                                        "log-out",
-                                        "/#",
-                                    ),
-                                    width="100%",
-                                    spacing="1",
-                                ),
-                                rx.divider(margin="0"),
-                                rx.hstack(
-                                    rx.icon_button(
-                                        rx.icon("user"),
-                                        size="3",
-                                        radius="full",
-                                    ),
-                                    rx.vstack(
-                                        rx.box(
-                                            rx.text(
-                                                "My account",
-                                                size="3",
-                                                weight="bold",
-                                            ),
-                                            rx.text(
-                                                "user@reflex.dev",
-                                                size="2",
-                                                weight="medium",
-                                            ),
-                                            width="100%",
-                                        ),
-                                        spacing="0",
-                                        justify="start",
-                                        width="100%",
-                                    ),
-                                    padding_x="0.5rem",
-                                    align="center",
-                                    justify="start",
-                                    width="100%",
-                                ),
-                                width="100%",
-                                spacing="5",
-                            ),
+                            # rx.vstack(
+                            #     rx.vstack(
+                            #         sidebar_item(
+                            #             "Settings",
+                            #             "settings",
+                            #             "/#",
+                            #         ),
+                            #         sidebar_item(
+                            #             "Log out",
+                            #             "log-out",
+                            #             "/#",
+                            #         ),
+                            #         width="100%",
+                            #         spacing="1",
+                            #     ),
+                            #     rx.divider(margin="0"),
+                            #     rx.hstack(
+                            #         rx.icon_button(
+                            #             rx.icon("user"),
+                            #             size="3",
+                            #             radius="full",
+                            #         ),
+                            #         rx.vstack(
+                            #             rx.box(
+                            #                 rx.text(
+                            #                     "My account",
+                            #                     size="3",
+                            #                     weight="bold",
+                            #                 ),
+                            #                 rx.text(
+                            #                     "user@reflex.dev",
+                            #                     size="2",
+                            #                     weight="medium",
+                            #                 ),
+                            #                 width="100%",
+                            #             ),
+                            #             spacing="0",
+                            #             justify="start",
+                            #             width="100%",
+                            #         ),
+                            #         padding_x="0.5rem",
+                            #         align="center",
+                            #         justify="start",
+                            #         width="100%",
+                            #     ),
+                            #     width="100%",
+                            #     spacing="5",
+                            # ),
                             spacing="5",
                             width="100%",
                         ),
