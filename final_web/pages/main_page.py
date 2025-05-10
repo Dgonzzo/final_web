@@ -5,7 +5,7 @@ def main_page() -> rx.Component:
     return rx.container(
         rx.color_mode.button(position="top-right"),
         rx.vstack(
-            rx.heading("Welcome to your inventory!", size="9"),
+            rx.heading("Welcome to your library!", size="9"),
             # rx.link(
             #     rx.button("Check out our docs!"),
             #     href="https://reflex.dev/docs/getting-started/introduction/",
