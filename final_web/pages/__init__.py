@@ -3,7 +3,7 @@ from .list import show_list
 from .add import add_product_page
 from .update import update_product_page
 from .delete import delete_product_page
-
+from .consult import consult_product_page
 __all__ = [
     "main_page",
     'show_list',
