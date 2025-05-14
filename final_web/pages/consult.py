@@ -27,7 +27,6 @@ def form_consult():
                     )
                     
                 ),
-                on_submit= AddState.handle_submit,
                 reset_on_submit=True,
             ),
     )
