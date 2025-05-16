@@ -1,9 +1,6 @@
 import reflex as rx
 
 from ..controllers import ConsultState
-from ..controllers import AddState
-from ..controllers import UpdateState
-from ..controllers import DeleteState
 
 def form_consult():
     return rx.vstack(
