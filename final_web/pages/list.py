@@ -6,7 +6,7 @@ from ..models import Product
 def show_products(product: Product):
     """Show a person in a table row."""
     return rx.table.row(
-        rx.table.cell(product.name),
+        rx.table.cell(rx.link(rx.text(product.name), href=f"consult/{product.name}")),
         rx.table.cell(product.price),
     )
 

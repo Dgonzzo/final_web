@@ -10,4 +10,5 @@ __all__ = [
     'add_product_page',
     'update_product_page',
     'delete_product_page',
+    'consult_product_page',
 ]
