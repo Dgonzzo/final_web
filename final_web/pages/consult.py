@@ -20,7 +20,7 @@ def form_consult():
                     ),
                     rx.hstack(
                         rx.button("Modify", type="button", color_scheme="green", on_click=ConsultState.handle_submit_update),
-                        rx.button("Delete", type="button", color_scheme="red", on_click=ConsultState.handle_submit_delete)
+                        # rx.button("Delete", type="button", color_scheme="red", on_click=ConsultState.handle_submit_delete)
                     )
                     
                 ),

@@ -30,9 +30,9 @@ def sidebar_item(
 def sidebar_items() -> rx.Component:
     return rx.vstack(
         sidebar_item("Home", "home", "/"),
-        sidebar_item("Show products", "book-open-text", "/show_products"),
-        sidebar_item("Add products", "clipboard-pen-line", "/add_product"),
-        sidebar_item("Update/Delete product", "brush", "/update_delete_product"),
+        sidebar_item("Show library", "book-open-text", "/show_products"),
+        sidebar_item("Add a book", "book-plus", "/add_product"),
+        sidebar_item("Delete a book", "book-minus", "/update_delete_product"),
         spacing="1",
         width="100%",
     )
