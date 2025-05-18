@@ -4,56 +4,49 @@ A brief description of your project and its purpose.
 
 ## Features
 
-- Feature 1: Describe the first feature.
-- Feature 2: Describe the second feature.
-- Feature 3: Describe the third feature.
+- Add book: You can add a book to your inventory by completing the forms
+- Delete a book: You can delete a book of your inventory by inserting the name
+- Show your library: Shows you a table with all the elements of your inventory
+- Consult your item: By clicking at the link of your database, you can modify the properties of a specific product
 
 ## Installation
 
 1. Clone the repository:
+    - With Https:
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/Dgonzzo/final_web.git
+    ```
+    - With SSH:
+    ```bash
+    git clone git@github.com:Dgonzzo/final_web.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd your-repo
+    cd final_web
     ```
-3. Install dependencies:
+3. Activate the virtual environment:
     ```bash
-    npm install
+    python3 -m venv .venv
+    source .venv/bin/activate
+    ```
+4. Install Reflex package
+    ```bash
+    pip install reflex
     ```
 
-## Usage
+
+## Run the App
 
 1. Start the development server:
     ```bash
-    npm start
+    reflex run
     ```
 2. Open your browser and navigate to `http://localhost:3000`.
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Commit your changes:
-    ```bash
-    git commit -m "Add feature-name"
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature-name
-    ```
-5. Open a pull request.
-
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project has no license due to it is a school project with any commercial purposes.
 
 ## Contact
 
-For questions or feedback, please contact [your-email@example.com].
+For questions or feedback contact [dgonzalez@iessarenal.net].
