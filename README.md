@@ -1,6 +1,6 @@
-# Project Title
+# Your final library
 
-A brief description of your project and its purpose.
+Web app to keep track of your books.
 
 ## Features
 
